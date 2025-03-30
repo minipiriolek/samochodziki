@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#f0f8ff">
+
+    <ImageView
+        android:id="@+id/carImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dcdcdc">
+        <RadioButton
+            android:id="@+id/sedanRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sedan"
+            android:checked="true"
+            android:textColor="#00008b" />
+        <RadioButton
+            android:id="@+id/suvRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUV"
+            android:textColor="#00008b" />
+        <RadioButton
+            android:id="@+id/hatchbackRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hatchback"
+            android:textColor="#00008b" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/acCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klimatyzacja"
+        android:textColor="#008000" />
+
+    <CheckBox
+        android:id="@+id/leatherSeatsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skórzane siedzenia"
+        android:textColor="#008000" />
+
+    <Button
+        android:id="@+id/configureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skonfiguruj"
+        android:textColor="#ffffff"
+        android:background="#ff4500" />
+
+    <TextView
+        android:id="@+id/summaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Podsumowanie konfiguracji"
+        android:textSize="16sp"
+        android:textColor="#4b0082" />
+</LinearLayout>
